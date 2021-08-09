@@ -1,4 +1,5 @@
 const cpuWeaponElem = document.getElementById('cpu_weapon');
+const resultElem = document.getElementById('result');
 
 const WEAPON = {
   ROCK: 0,
@@ -16,6 +17,11 @@ const RESULT = {
   DRAW: 0,
   LOSE: -1,
 }
+
+const RESULT_TEXT = {}
+RESULT_TEXT[RESULT.WIN] = "Congratulations! You Win!"
+RESULT_TEXT[RESULT.DRAW] = "It's a draw. Try again."
+RESULT_TEXT[RESULT.LOSE] = "Oops...You lose."
 
 // Create table which defines whether a weapon is superior to another one or not.
 const WEAPON_SUPERIORITY_TABLE = {};
@@ -43,5 +49,6 @@ function onWeaponClick(weapon) {
   const cpuWeapon = getCPURandomWeapon();
   cpuWeaponElem.setAttribute("src", WEAPON_IMAGE[cpuWeapon]);
 
-  console.log(compareTwoWeapon(weapon, cpuWeapon));
+  const result = compareTwoWeapon(weapon, cpuWeapon);
+  resultElem.innerText = RESULT_TEXT[result];
 }
