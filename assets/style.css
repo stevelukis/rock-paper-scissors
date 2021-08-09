@@ -42,6 +42,26 @@ article {
     font-family: "Arial", sans-serif;
 }
 
+.arena {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.arena-player {
+    flex: 40%;
+}
+
+.arena-vs {
+    flex: 20%;
+    margin: auto;
+    font-size: 40px;
+}
+
+.arena-cpu {
+    flex: 40%;
+}
+
 .information {
     font-family: "Segoe UI", sans-serif;
     flex: 30%;
