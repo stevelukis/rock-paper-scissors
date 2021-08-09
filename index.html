@@ -12,71 +12,83 @@
 <main>
     <article class="main-article">
         <aside class="card information">
-            <h3>What is Rock Paper Scissor?</h3>
-            <p class="mt-20">
-                Rock paper scissors is a hand game usually played between two
-                people, in which each player simultaneously forms one of three shapes with an outstretched hand. These
-                shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger
-                and middle finger extended, forming a V). "Scissors" is identical to the two-fingered V sign (also
-                indicating "victory" or "peace") except that it is pointed horizontally instead of being held upright
-                in the air.
-            </p>
-            <p class="mt-20">
-                <i>Source: Wikipedia</i>
-            </p>
+            <div class="card-header">
+                <h3>What is Rock Paper Scissor?</h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    Rock paper scissors is a hand game usually played between two
+                    people, in which each player simultaneously forms one of three shapes with an outstretched hand. These
+                    shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger
+                    and middle finger extended, forming a V). "Scissors" is identical to the two-fingered V sign (also
+                    indicating "victory" or "peace") except that it is pointed horizontally instead of being held upright
+                    in the air.
+                </p>
+                <p class="mt-20">
+                    <i>Source: Wikipedia</i>
+                </p>
+            </div>
         </aside>
         <article class="card game">
-            <h3 class="game-header">Choose your weapon</h3>
-            <div class="choose-weapon mt-20">
-                <img class="weapon clickable"
-                     src="assets/images/rock.png"
-                     alt="Rock"
-                     onclick="onWeaponClick(WEAPON.ROCK)"/>
-                <img class="weapon clickable"
-                     src="assets/images/paper.png"
-                     alt="Paper"
-                     onclick="onWeaponClick(WEAPON.PAPER)"/>
-                <img class="weapon clickable"
-                     src="assets/images/scissors.png"
-                     alt="Scissors"
-                     onclick="onWeaponClick(WEAPON.SCISSORS)"/>
+            <div class="card-header">
+                <h3>Play Against Computer</h3>
             </div>
-            <div class="arena">
-                <div class="arena-player">
-                    <h3>You</h3>
-                    <img class="weapon mt-20"
-                         id="player_weapon"
-                         src="assets/images/question.png"
-                         alt="Unknown"/>
+            <div class="card-body">
+                <h3 class="game-instruction">Choose your weapon</h3>
+                <div class="choose-weapon mt-20">
+                    <img class="weapon clickable"
+                         src="assets/images/rock.png"
+                         alt="Rock"
+                         onclick="onWeaponClick(WEAPON.ROCK)"/>
+                    <img class="weapon clickable"
+                         src="assets/images/paper.png"
+                         alt="Paper"
+                         onclick="onWeaponClick(WEAPON.PAPER)"/>
+                    <img class="weapon clickable"
+                         src="assets/images/scissors.png"
+                         alt="Scissors"
+                         onclick="onWeaponClick(WEAPON.SCISSORS)"/>
                 </div>
-                <div class="arena-vs">
-                    VS
+                <div class="arena">
+                    <div class="arena-player">
+                        <h3>You</h3>
+                        <img class="weapon mt-20"
+                             id="player_weapon"
+                             src="assets/images/question.png"
+                             alt="Unknown"/>
+                    </div>
+                    <div class="arena-vs">
+                        VS
+                    </div>
+                    <div class="arena-cpu">
+                        <h3>Computer</h3>
+                        <img class="weapon mt-20"
+                             id="cpu_weapon"
+                             src="assets/images/question.png"
+                             alt="Unknown"/>
+                    </div>
                 </div>
-                <div class="arena-cpu">
-                    <h3>Computer</h3>
-                    <img class="weapon mt-20"
-                         id="cpu_weapon"
-                         src="assets/images/question.png"
-                         alt="Unknown"/>
+                <div class="mt-20">
+                    <h3 id="result">Pick a weapon first</h3>
                 </div>
-            </div>
-            <div class="mt-20">
-                <h3 id="result">Pick a weapon first</h3>
             </div>
         </article>
     </article>
     <aside class="card author">
-        <img class="author-image"
-             src="assets/images/steve.jpg"
-             alt="Author's photo"/>
-        <div class="author-information">
-            <h3>Steve Lukis</h3>
-            <p class="mt-20">
-                Steve Lukis is a software developer from Makassar, Indonesia.
-                <br/>
-                He loves to eat Coto Makassar because it is very tasty.
-            </p>
-        </div>
+        <h2 class="card-header">Author</h2>
+        <article class="card-body author-article mt-20">
+            <img class="author-image"
+                 src="assets/images/steve.jpg"
+                 alt="Author's photo"/>
+            <div class="author-information">
+                <h3>Steve Lukis</h3>
+                <p class="mt-20">
+                    Steve Lukis is a software developer from Makassar, Indonesia.
+                    <br/>
+                    He loves to eat Coto Makassar because it is very tasty.
+                </p>
+            </div>
+        </article>
     </aside>
 </main>
 <script src="assets/scripts/dom.js"></script>

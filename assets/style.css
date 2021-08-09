@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +9,24 @@
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+}
+
+.card-header {
+    background: #1abc9c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Georama', sans-serif;
+}
+
+.card-body {
     padding: 20px;
 }
 
 .header {
     padding: 20px;
-    text-align: center;
-    font-family: sans-serif;
+    text-align: center;font-family: 'Georama', sans-serif;
     background: #1abc9c;
     color: white;
     font-size: 40px;
@@ -79,6 +92,9 @@ main {
 
 .author {
     margin: 20px;
+}
+
+.author-article {
     display: flex;
 }
 
