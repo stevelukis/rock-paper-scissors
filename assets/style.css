@@ -71,5 +71,26 @@ main {
 
 .weapon {
     width: 100px;
+}
+
+.clickable {
     cursor: pointer;
+}
+
+.author {
+    margin: 20px;
+    display: flex;
+}
+
+.author-image {
+    max-width: 200px;
+    border-radius: 50%;
+    flex: 30%;
+}
+
+.author-information {
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    padding: 20px;
+    flex: 70%;
 }
