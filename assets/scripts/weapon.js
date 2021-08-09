@@ -1,3 +1,9 @@
+const RESULT = {
+  WIN: 1,
+  DRAW: 0,
+  LOSE: -1,
+}
+
 const WEAPON = {
   ROCK: 0,
   PAPER: 1,
