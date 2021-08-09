@@ -3,11 +3,14 @@ RESULT_TEXT[RESULT.WIN] = "Congratulations! You Win!"
 RESULT_TEXT[RESULT.DRAW] = "It's a draw. Try again."
 RESULT_TEXT[RESULT.LOSE] = "Oops...You lose."
 
+const WAITING_TEXT = "CPU is picking a weapon..."
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function onWeaponClick(weapon) {
+  resultElem.innerText = WAITING_TEXT;
   let cpuWeapon;
 
   // Sleep in loop
