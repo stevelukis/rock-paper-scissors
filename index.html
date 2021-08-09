@@ -10,62 +10,62 @@
     Rock Paper Scissors
 </header>
 <main>
-    <article class="card information">
-        <h3>What is Rock Paper Scissor?</h3>
-        <p class="mt-20">
-            Rock paper scissors (also known by other orderings of the three items, with "rock" sometimes being called
-            "stone", or as Rochambeau, roshambo, or ro-sham-bo) is a hand game usually played between two people,
-            in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are
-            "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle
-            finger
-            extended, forming a V). "Scissors" is identical to the two-fingered V sign (also indicating "victory" or
-            "peace")
-            except that it is pointed horizontally instead of being held upright in the air.
-        </p>
-        <p class="mt-20">
-            <i>Source: Wikipedia</i>
-        </p>
-    </article>
-    <article class="card game">
-        <h3 class="game-header">Choose your weapon</h3>
-        <div class="choose-weapon mt-20">
-            <img class="weapon"
-                 src="assets/images/rock.png"
-                 alt="Rock"
-                 onclick="onWeaponClick(WEAPON.ROCK)"/>
-            <img class="weapon"
-                 src="assets/images/paper.png"
-                 alt="Paper"
-                 onclick="onWeaponClick(WEAPON.PAPER)"/>
-            <img class="weapon"
-                 src="assets/images/scissors.png"
-                 alt="Scissors"
-                 onclick="onWeaponClick(WEAPON.SCISSORS)"/>
-        </div>
-        <div class="arena">
-            <div class="arena-player">
-                <h3>You</h3>
-                <img class="mt-20"
-                     id="player_weapon"
-                     width="100px"
-                     src="assets/images/question.png"
-                     alt="Unknown"/>
+    <article class="main-article">
+        <aside class="card information">
+            <h3>What is Rock Paper Scissor?</h3>
+            <p class="mt-20">
+                Rock paper scissors is a hand game usually played between two
+                people, in which each player simultaneously forms one of three shapes with an outstretched hand. These
+                shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger
+                and middle finger extended, forming a V). "Scissors" is identical to the two-fingered V sign (also
+                indicating "victory" or "peace") except that it is pointed horizontally instead of being held upright
+                in the air.
+            </p>
+            <p class="mt-20">
+                <i>Source: Wikipedia</i>
+            </p>
+        </aside>
+        <article class="card game">
+            <h3 class="game-header">Choose your weapon</h3>
+            <div class="choose-weapon mt-20">
+                <img class="weapon"
+                     src="assets/images/rock.png"
+                     alt="Rock"
+                     onclick="onWeaponClick(WEAPON.ROCK)"/>
+                <img class="weapon"
+                     src="assets/images/paper.png"
+                     alt="Paper"
+                     onclick="onWeaponClick(WEAPON.PAPER)"/>
+                <img class="weapon"
+                     src="assets/images/scissors.png"
+                     alt="Scissors"
+                     onclick="onWeaponClick(WEAPON.SCISSORS)"/>
             </div>
-            <div class="arena-vs">
-                VS
+            <div class="arena">
+                <div class="arena-player">
+                    <h3>You</h3>
+                    <img class="mt-20"
+                         id="player_weapon"
+                         width="100px"
+                         src="assets/images/question.png"
+                         alt="Unknown"/>
+                </div>
+                <div class="arena-vs">
+                    VS
+                </div>
+                <div class="arena-cpu">
+                    <h3>Computer</h3>
+                    <img class="mt-20"
+                         id="cpu_weapon"
+                         width="100px"
+                         src="assets/images/question.png"
+                         alt="Unknown"/>
+                </div>
             </div>
-            <div class="arena-cpu">
-                <h3>Computer</h3>
-                <img class="mt-20"
-                     id="cpu_weapon"
-                     width="100px"
-                     src="assets/images/question.png"
-                     alt="Unknown"/>
+            <div class="mt-20">
+                <h3 id="result">Pick a weapon first</h3>
             </div>
-        </div>
-        <div class="mt-20">
-            <h3 id="result">Pick a weapon first</h3>
-        </div>
+        </article>
     </article>
 </main>
 <script src="assets/scripts/dom.js"></script>
