@@ -13,8 +13,8 @@
 }
 
 .card-header {
-    background: #1abc9c;
-    color: white;
+    background: #0F044C;
+    color: #EEEEEE;
     text-align: center;
     padding: 20px;
     font-family: 'Georama', sans-serif;
@@ -22,21 +22,22 @@
 
 .card-body {
     padding: 20px;
+    background-color: white;
 }
 
 header {
     padding: 20px;
     text-align: center;font-family: 'Georama', sans-serif;
-    background: #1abc9c;
-    color: white;
+    background: #0F044C;
+    color: #EEEEEE;
     font-size: 40px;
 }
 
 footer {
     padding: 20px;
     text-align: center;font-family: 'Georama', sans-serif;
-    background: #1abc9c;
-    color: white;
+    background: #0F044C;
+    color: #EEEEEE;
     font-size: 20px;
 }
 
