@@ -11,6 +11,7 @@ function sleep(ms) {
 
 async function onWeaponClick(weapon) {
   resultElem.innerText = WAITING_TEXT;
+  playerWeaponElem.setAttribute("src", WEAPON_IMAGE[weapon]);
   let cpuWeapon;
 
   // Sleep in loop
