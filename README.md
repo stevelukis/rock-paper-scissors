@@ -7,6 +7,6 @@ human's choice into calculation). Built with pure HTML, CSS, and JS with no fram
 This project is made as my final submission for the course 
 "Belajar Dasar Pemrograman Web" by Dicoding.
 
-![img.png](preview_full.png)
+![Preview full website](preview_full.png)
 
-![img.png](preview_lose.png)
+![Preview losing the game](preview_lose.png)
