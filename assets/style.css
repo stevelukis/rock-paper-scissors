@@ -140,3 +140,9 @@ main {
         flex: 100%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .author-article {
+        flex-direction: column;
+    }
+}
